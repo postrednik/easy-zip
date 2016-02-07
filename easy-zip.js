@@ -85,12 +85,12 @@ EasyZip.prototype.zipFolder = function(folder, callback, options) {
 
 			if(stat.isFile()){
 				zips.push({
-					target : targetPath,
+					target : file,
 					source : sourcePath
 				});
 			}else{
 				zips.push({
-					target : targetPath
+					target : file
 				});
 
 				//join the path
